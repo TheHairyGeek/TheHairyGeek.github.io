@@ -1,18 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
-    text-align: center;
 }
 
-main {
+header {
+    background: #333;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
     padding: 20px;
 }
 
@@ -24,22 +42,61 @@ main {
 }
 
 .guitar {
-    border: 1px solid #ddd;
+    border: 2px solid #ccc;
     padding: 10px;
-    width: 300px;
+    width: calc(33.333% - 20px);
+    background: #fafafa;
 }
 
 .guitar img {
     max-width: 100%;
-    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.guitar h2 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+}
+
+.guitar p {
+    text-align: justify;
+    color: #666;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+    }
+    
+    .guitar {
+        width: 100%;
+    }
+}
+
+/* Viking Style Enhancements */
+body {
+    background-color: #eae7dc; /* Earthy background */
+}
+
+header, footer {
+    background-color: #3b3b3b; /* Dark grey for headers and footers */
+}
+
+.guitar {
+    border-color: #8d8741; /* Metallic gold border */
+}
+
+.guitar h2 {
+    color: #d3b88c; /* Light gold color for titles */
 }
