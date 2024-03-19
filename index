@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Guitar Creations</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <!-- Repeat this block for each guitar -->
+            <div class="guitar">
+                <img src="path-to-your-guitar-image.jpg" alt="Guitar Name">
+                <h2>Guitar Model Name</h2>
+                <p>Description of the guitar. Talk about what makes it special.</p>
+            </div>
+            <!-- End of a guitar block -->
+        </section>
+    </main>
+    <footer>
+        <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </footer>
+</body>
+</html>
