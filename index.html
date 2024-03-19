@@ -3,24 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Showcase</title>
+    <title>Guitar Creations</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>My Guitar Creations</h1>
+        <nav>
+            <ul>
+                <li><a href="#custom-designs">Custom Designs</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
+    
     <main>
-        <section class="gallery">
-            <!-- Repeat this block for each guitar -->
-            <div class="guitar">
-                <img src="path-to-your-guitar-image.jpg" alt="Guitar Name">
-                <h2>Guitar Model Name</h2>
-                <p>Description of the guitar. Talk about what makes it special.</p>
+        <section id="custom-designs">
+            <h2>Custom Designs</h2>
+            <p>Discover the unique, handcrafted guitars designed with precision and passion. Each piece tells a story, reflecting the personality and style of its creator and owner.</p>
+        </section>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate guitar builder with a love for creating unique, high-quality instruments. Drawing inspiration from both modern and traditional designs, I aim to bring the soul of music to every piece I craft.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Interested in a custom guitar or have any questions? Get in touch with me!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Repeat this block for each item in your gallery -->
+                <div class="guitar">
+                    <img src="path-to-your-guitar-image.jpg" alt="Guitar Name">
+                    <h3>Guitar Model Name</h3>
+                    <p>Description of the guitar. What makes it special.</p>
+                </div>
+                <!-- End of the block -->
             </div>
-            <!-- End of a guitar block -->
         </section>
     </main>
+    
     <footer>
         <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
     </footer>
